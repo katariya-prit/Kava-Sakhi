@@ -106,7 +106,7 @@ class ChatbotApp(ctk.CTk):
         self._typing_widget = None
         self._typing_wrapper = None
 
-        self.title("Kava Sakhi - AI Chatbot")
+        self.title("Henry - AI Chatbot")
         self.geometry("700x760")
         self.minsize(520, 560)
         self.configure(fg_color=COLOR_BG)
@@ -172,7 +172,7 @@ class ChatbotApp(ctk.CTk):
         title_box.grid(row=0, column=1, sticky="w", pady=10)
 
         ctk.CTkLabel(
-            title_box, text="Kava Sakhi", font=("Segoe UI", 16, "bold"), text_color=COLOR_TEXT
+            title_box, text="Henry", font=("Segoe UI", 16, "bold"), text_color=COLOR_TEXT
         ).pack(anchor="w")
 
         status_row = ctk.CTkFrame(title_box, fg_color="transparent")
@@ -340,7 +340,7 @@ class ChatbotApp(ctk.CTk):
     # WELCOME
     # ============================================================
     def _welcome_message(self):
-        self.add_bubble("Hi! I'm Kava Sakhi 🪷 — how can I help you today?", sender="bot")
+        self.add_bubble("Hi! I'm Henry 🪷 — how can I help you today?", sender="bot")
 
     # ============================================================
     # CHAT BUBBLES (slide + fade in)
